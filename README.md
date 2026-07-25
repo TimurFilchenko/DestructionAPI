@@ -1,39 +1,23 @@
 # DestructionAPI
 
-A lightweight C# destruction system designed for game engines.
+DestructionAPI is a lightweight C# library for creating and managing destructible objects in game projects.
 
-DestructionAPI provides a simple framework for creating destructible objects,
-applying damage, and managing destruction logic.
+The goal of this project is to provide a simple and extendable destruction system that can be integrated into game engines and custom frameworks.
 
 ## Features
 
-- Destructible objects
-- Damage system
-- Material support
-- Fragment system
-- Simple destruction engine
-- Easy integration into game projects
+- Destructible object system
+- Damage handling
+- Object health management
+- Material-based destruction
+- Fragment support
+- Simple destruction engine architecture
 
-## Project Structure
-
-DestructionAPI/ │ 
-├── LICENSE 
-├── README.md │ 
-├── DestructionAPI/ │  
-├── DestructionAPI.cs │   
-├── DestructionEngine.cs │   
-├── DestructibleObject.cs │  
-├── Fragment.cs │   
-├── Material.cs │  
-└── Vector3.cs │ 
-└── Example/ └
-── Program.cs
-
-## Usage
-
-Create a destructible object:
+## Example
 
 ```csharp
+using DestructionAPI;
+
 DestructibleObject wall =
     new DestructibleObject(
         "Concrete Wall",
@@ -41,26 +25,21 @@ DestructibleObject wall =
         Material.Concrete
     );
 
-Create the destruction engine:
-
 DestructionEngine engine =
     new DestructionEngine();
-
-Apply damage:
 
 engine.ApplyDamage(
     wall,
     500
 );
 
-Check destruction state:
+Output:
 
-if (wall.IsDestroyed())
-{
-    Console.WriteLine("Object destroyed");
-}
+Object Concrete Wall damaged
 
-Supported Materials
+Materials
+
+Supported materials:
 
 Wood
 
@@ -75,10 +54,8 @@ Stone
 
 Version
 
-Current version:
-
 0.1.0
 
 License
 
-This project is licensed under the MIT License.
+MIT License
