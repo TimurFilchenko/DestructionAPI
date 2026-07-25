@@ -16,7 +16,18 @@ applying damage, and managing destruction logic.
 
 ## Project Structure
 
-DestructionAPI/ │ ├── LICENSE ├── README.md │ ├── DestructionAPI/ │   ├── DestructionAPI.cs │   ├── DestructionEngine.cs │   ├── DestructibleObject.cs │   ├── Fragment.cs │   ├── Material.cs │   └── Vector3.cs │ └── Example/ └── Program.cs
+DestructionAPI/ │ 
+├── LICENSE 
+├── README.md │ 
+├── DestructionAPI/ │  
+├── DestructionAPI.cs │   
+├── DestructionEngine.cs │   
+├── DestructibleObject.cs │  
+├── Fragment.cs │   
+├── Material.cs │  
+└── Vector3.cs │ 
+└── Example/ └
+── Program.cs
 
 ## Usage
 
